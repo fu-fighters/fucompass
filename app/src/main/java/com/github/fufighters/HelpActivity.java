@@ -1,4 +1,4 @@
-package com.github.organizations.fufighters;
+package org.github.fufighters;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;

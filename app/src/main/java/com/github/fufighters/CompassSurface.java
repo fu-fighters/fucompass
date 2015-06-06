@@ -4,7 +4,7 @@
  * Copyright (c) 2011, Digital Lizard (Oscar Key, Thomas Boby)
  * All rights reserved.
  ******************************************************************************/
-package com.github.organizations.fufighters;
+package org.github.fufighters;
 
 import java.text.DecimalFormat;
 

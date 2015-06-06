@@ -1,4 +1,4 @@
-package com.github.organizations.fufighters;
+package org.github.fufighters;
 
 public class CardinalConverter {
 	public static final String NORTH = "N";
