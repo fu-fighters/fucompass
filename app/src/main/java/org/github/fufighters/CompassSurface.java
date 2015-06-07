@@ -358,14 +358,12 @@ public class CompassSurface extends SurfaceView implements Runnable {
 		int cardY = (int)Math.floor(COMPASS_CENTER_Y * heightScale - (cardDiameter / 2));
 		Rect cardRect = new Rect(cardX, cardY, cardX + cardDiameter, cardY + cardDiameter);
 		canvas.drawBitmap(cardImage, null, cardRect, imagePaint);
-		//canvas.restore();
 
 		// draw the locked bearing
 		canvas.rotate(getLockedBearing(), COMPASS_CENTER_X * widthScale, COMPASS_CENTER_Y * heightScale);
 		bluePaint.setStyle(Paint.Style.STROKE);
 		bluePaint.setStrokeWidth(3f);
 		canvas.drawLine(COMPASS_CENTER_X * widthScale, cardY, COMPASS_CENTER_X * widthScale, cardY + ((1 - INNER_COMPASS_CARD_RATIO) * cardDiameter / 2), bluePaint);
-		canvas.restore();
 
 		// draw the bezel
 		darkGreyPaint.setStyle(Paint.Style.STROKE);
@@ -373,7 +371,6 @@ public class CompassSurface extends SurfaceView implements Runnable {
 		canvas.drawCircle(COMPASS_CENTER_X * widthScale, COMPASS_CENTER_Y * heightScale, cardDiameter / 2 + 2f, darkGreyPaint);
 		canvas.drawLine(COMPASS_CENTER_X * widthScale, cardY, COMPASS_CENTER_X * widthScale, cardY + ((1 - INNER_COMPASS_CARD_RATIO) * cardDiameter / 2), darkGreyPaint);
 		darkGreyPaint.setStyle(Paint.Style.FILL);
-
 
 		// draw the fps
 		if(DRAW_FPS) {
