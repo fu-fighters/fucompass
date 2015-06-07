@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FU Compass</string>
+    <string name="magnetic_north">Nord magnetico</string>
+    <string name="true_north">Nord geografico</string>
+    <string name="settings_category_general">Generale</string>
+    <string name="settings_item_north">North Reference</string>
+    <string name="preference_key_north">nord</string>
+    <string name="settings_summary_north">Nord geografico o magnetico?</string>
+    <string name="menu_title_help">Aiuto</string>
+    <string name="menu_title_manual_variation">Variazione manuale</string>
+    <string name="menu_title_manual_locked_brearing">Angolo bloccato manualmente</string>
+    <string name="bearing_selection_dialog_set_button">Imposta</string>
+    <string name="bearing_selection_dialog_auto_button">Auto</string>
+    <string name="manual">manuale</string>
+    <string name="variation">variazione</string>
+</resources>

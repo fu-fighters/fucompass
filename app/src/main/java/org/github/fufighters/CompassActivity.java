@@ -1,9 +1,3 @@
-/*******************************************************************************
- * NiceCompass
- * Released under the BSD License. See README or LICENSE.
- * Copyright (c) 2011, Digital Lizard (Oscar Key, Thomas Boby)
- * All rights reserved.
- ******************************************************************************/
 package org.github.fufighters;
 
 import android.app.Dialog;

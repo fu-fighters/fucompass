@@ -1,9 +1,3 @@
-/*******************************************************************************
- * NiceCompass
- * Released under the BSD License. See README or LICENSE.
- * Copyright (c) 2011, Digital Lizard (Oscar Key, Thomas Boby)
- * All rights reserved.
- ******************************************************************************/
 package org.github.fufighters;
 
 import java.text.DecimalFormat;
@@ -272,9 +266,10 @@ public class CompassSurface extends SurfaceView implements Runnable {
 		
 		declenationText = "";
 		if(compass.isUsingManualDeclination()) {
-			declenationText += "manual ";
+			declenationText += getResources().getString(R.string.manual);
 		}
-		declenationText += "variation: "+declenationFormat.format(compass.getDeclination())+"\u00B0"; // u00B0 is degrees sign
+		declenationText += getResources().getString(R.string.variation) + ": " + declenationFormat.format(compass
+				.getDeclination()) + "\u00B0"; // u00B0 is degrees sign
 	}
 	
 	void update(float delta) {
@@ -363,7 +358,8 @@ public class CompassSurface extends SurfaceView implements Runnable {
 		canvas.rotate(getLockedBearing(), COMPASS_CENTER_X * widthScale, COMPASS_CENTER_Y * heightScale);
 		bluePaint.setStyle(Paint.Style.STROKE);
 		bluePaint.setStrokeWidth(3f);
-		canvas.drawLine(COMPASS_CENTER_X * widthScale, cardY, COMPASS_CENTER_X * widthScale, cardY + ((1 - INNER_COMPASS_CARD_RATIO) * cardDiameter / 2), bluePaint);
+		canvas.drawLine(COMPASS_CENTER_X * widthScale, cardY, COMPASS_CENTER_X * widthScale, cardY + ((1 -
+				INNER_COMPASS_CARD_RATIO) * cardDiameter / 2), bluePaint);
 
 		// draw the bezel
 		darkGreyPaint.setStyle(Paint.Style.STROKE);
