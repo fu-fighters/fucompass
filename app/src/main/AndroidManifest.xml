@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application android:allowClearUserData="true" android:label="@string/app_name"
                  android:icon="@drawable/icon">
-        <activity android:name="com.github.organizations.fufighters.CompassActivity"
+        <activity android:name="org.github.fufighters.CompassActivity"
                   android:screenOrientation="portrait"
                   android:theme="@style/compassTheme">
             <intent-filter>
@@ -25,7 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
-        <activity android:name="com.github.organizations.fufighters.HelpActivity" android:theme="@style/compassTheme"
+        <activity android:name="org.github.fufighters.HelpActivity" android:theme="@style/compassTheme"
                   android:label="Help"
                   android:screenOrientation="portrait"></activity>
     </application>
